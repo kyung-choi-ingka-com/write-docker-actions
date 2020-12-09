@@ -1,0 +1,6 @@
+name: "hello-world action"
+descript: "this is following tutorial"
+runs:
+ using: "docker"
+ image: "Dockerfile"
+ 
