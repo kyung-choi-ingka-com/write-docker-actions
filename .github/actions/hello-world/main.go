@@ -1,18 +1,24 @@
 package main
+
 import (
-   "fmt"
-   "os"
+    "fmt"
+    "os"
 )
 
 func main() {
-   input1 := os.Getenv("INPUT_GREETING1")
-   input2 := os.Getenv("INPUT_GREETING2")
-   input3 := os.Getenv("INPUT_GREETING3")
-   
-   fmt.Println(input1)
-   fmt.Println(input2)
-   
-   if input3 != "" {
-      fmt.Println(input3)
-   }
+
+// Access Inputs as environment vars
+firstGreeting := os.Getenv("INPUT_FIRSTGREETING")
+secondGreeting := os.Getenv("INPUT_SECONDGREETING")
+thirdGreeting := os.Getenv("INPUT_THIRDGREETING")
+
+// Use those inputs in the actions logic
+fmt.Println("Hello " + firstGreeting)
+fmt.Println("Hello " + secondGreeting)
+
+// Someimes inputs are not "required" and we can build around that
+if thirdGreeting != "" {
+    fmt.Println("Hello " + thirdGreeting)
+    }
+
 }
