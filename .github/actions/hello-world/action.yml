@@ -3,4 +3,16 @@ descript: "this is following tutorial"
 runs:
  using: "docker"
  image: "Dockerfile"
+inputs:
+ greeting1:
+   description: "This is the first input"
+   require: true
+   default: "Hi, there. I am the first input!!"
+ greeting2:
+   description: "This is the second input"
+   require: true
+   default: "Hi, there. I am the second input!!"
+greeting3:
+   description: "This is the third input"
+   require: false
  
