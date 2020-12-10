@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-   input1 := os.getEnv("INPUT_GREETING1")
-   input2 := os.getEnv("INPUT_GREETING2")
-   input3 := os.getEnv("INPUT_GREETING3")
+   input1 := os.Getenv("INPUT_GREETING1")
+   input2 := os.Getenv("INPUT_GREETING2")
+   input3 := os.Getenv("INPUT_GREETING3")
    
    fmt.Println(input1)
    fmt.Println(intpu2)
