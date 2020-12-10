@@ -10,7 +10,7 @@ func main() {
    input3 := os.Getenv("INPUT_GREETING3")
    
    fmt.Println(input1)
-   fmt.Println(intpu2)
+   fmt.Println(input2)
    
    if input3 != "" {
       fmt.Println(input3)
