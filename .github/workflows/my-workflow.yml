@@ -28,7 +28,10 @@ jobs:
       - name: hello-action
         uses: ./.github/actions/hello-world
         with: 
-          greeting1: "Hi, there, i am the first input from workflow" 
+          firstGreeting: "Learning Lab User"
+          secondGreeting: "Hi, there from my-workflow.yml"
+          thirdGreeting: "Hi, there agian from my-workflow.yml"
+          
       # Runs a single command using the runners shell
       # - name: Run a one-line script
       #  run: echo Hello, world!
