@@ -27,6 +27,8 @@ jobs:
 
       - name: hello-action
         uses: ./.github/actions/hello-world
+        with: 
+          thirdGreeting: "Hi, there from third greeting"
       # Runs a single command using the runners shell
       # - name: Run a one-line script
       #  run: echo Hello, world!
