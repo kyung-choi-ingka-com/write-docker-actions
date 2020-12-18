@@ -5,7 +5,7 @@ on:
     types: [labeled]
 
 jobs:
-  action:
+  build:
     runs-on: ubuntu-latest
 
     steps:
